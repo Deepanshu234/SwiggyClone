@@ -1,0 +1,324 @@
+/**
+
+ * Css styles for jquery.tagit plugin
+
+ * Extending bootstrap (http://twitter.github.com/bootstrap/)
+
+ */
+
+
+
+/**
+
+ * Provides both, elements which look like form inputs when they are not and
+
+ * cleared styles for form elements (no shadow etc.)
+
+ */.form-dummy fieldset {
+
+  margin-bottom: 0;
+
+}
+
+.form-dummy fieldset > div {
+
+  margin-bottom: 0;
+
+}
+
+.form-dummy label {
+
+  line-height: 14px;
+
+}
+
+.form-dummy .input > span {
+
+  line-height: 14px;
+
+  display: inline-block;
+
+  height: 14px;
+
+  padding: 6px;
+
+}
+
+.fake-input {
+
+  display: inline-block;
+
+  width: 860px;
+
+  margin: 0;
+
+  padding: 4px;
+
+  font-size: 13px;
+
+  line-height: 18px;
+
+  height: 18px;
+
+  color: gray;
+
+  
+
+}
+
+.fake-input {
+
+
+
+}
+
+.fake-input.focused {
+
+
+
+}
+
+form div.error, input.no-style {
+
+  -webkit-transition: none;
+
+  -moz-transition: none;
+
+  transition: none;
+
+  -webkit-box-shadow: none;
+
+  -moz-box-shadow: none;
+
+  box-shadow: none;
+
+}
+
+form div.error input.no-style,
+
+input.no-style,
+
+form div.error input.no-style:focus,
+
+input.no-style:focus {
+
+  border: none;
+
+  -webkit-border-radius: 0;
+
+  -moz-border-radius: 0;
+
+  border-radius: 0;
+
+  -webkit-box-shadow: none;
+
+  -moz-box-shadow: none;
+
+  box-shadow: none;
+
+  -webkit-transition: none;
+
+  -moz-transition: none;
+
+  transition: none;
+
+}
+
+form div.error .fake-input {
+
+  border-color: #c87872;
+
+  -webkit-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+
+  -moz-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+
+  box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+
+}
+
+form div.error .fake-input.focused {
+
+  border-color: #b9554d;
+
+  -webkit-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+
+  -moz-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+
+  box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+
+}
+
+.tagit {
+
+  list-style: none;
+
+}
+
+.tagit.fake-input {
+
+  padding: 15px 4px 0px 4px;
+
+  height: auto;
+
+  line-height: 26px;
+
+}
+
+.tagit li {
+
+  display: inline-block;
+
+}
+
+.tagit li.tag {
+
+  margin: 3px 4px 3px 0;
+
+  padding: 0 2px 0 2px;
+
+  line-height: 18px;
+
+  cursor: default;
+
+
+
+  color: #333;
+
+}
+
+.tagit li.tag .close {
+
+ float:left;
+
+  width: 11px;
+
+  height: 11px;
+
+  margin:3px;
+
+  background: url("../images/close.png") 0 0 no-repeat;
+
+}
+
+.tagit li.tag .close:hover {
+
+  background-position: 0 -11px;
+
+}
+
+.tagit li.tag .close:active {
+
+  background-position: 0 -22px;
+
+}
+
+.tagit li.tag:before {
+
+    background: url("../images/tagleft.png") no-repeat scroll 0 0 transparent;
+
+    content: "";
+
+    display: block;
+
+    float: left;
+
+    height: 29px;
+
+    width: 15px;
+
+}
+
+.tagit li.tag span {
+
+  background: url("../images/tabcenter.png") repeat-x scroll left top transparent;
+
+    color: #fff;
+
+    float: left;
+
+    font-size: 11px;
+
+    font-weight: normal;
+
+    height: 29px;
+
+    padding: 5px 6px;
+
+    text-decoration: none;
+
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);}
+
+
+
+
+
+.tagit .tagit-edit-handle {
+
+  position: relative;
+
+}
+
+.tagit .tagit-edit-handle input {
+
+  padding: 3px 4px 2px 0;
+
+  background: transparent;
+
+}
+
+.tagit .tagit-edit-handle ul {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 20px;
+
+  right: 0;
+
+  background: white;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: none;
+
+  border: solid 1px #7f9db9;
+
+  line-height: 20px;
+
+}
+
+.tagit .tagit-edit-handle ul.open {
+
+  display: block;
+
+}
+
+.tagit .tagit-edit-handle ul.open:hover li.selected {
+
+  background: transparent;
+
+  color: inherit;
+
+}
+
+.tagit .tagit-edit-handle ul.open li.selected, .tagit .tagit-edit-handle ul.open:hover li:hover {
+
+  background: #3399ff;
+
+  color: white;
+
+}
+
+.tagit .tagit-edit-handle ul.open li {
+
+  display: block;
+
+  padding: 3px;
+
+  cursor: default;
+
+}
+
